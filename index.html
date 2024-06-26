@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chrome</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="https://mail.google.com/mail/u/0/">Gmail</a>
+        <a href="https://www.crunchyroll.com/">Cruchyroll</a>
+        <a href="https://fontawesome.com/search?q=gmail&o=r">Fontawesome</a>
+    </div>
+
+    <div class="card">
+        <div>
+            <img src="./rohit waghe oi.jpg" alt="">
+        </div>
+       
+    </div>
+    <div class="icon">
+       <a href="https://www.instagram.com/rohit_waghe_45/"> <i class="fa-brands fa-instagram"></i></a><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a><a href="https://www.facebook.com/rohit.waghe.94?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+    
+       <a href="https://www.linkedin.com/in/rohit-waghe-0773051bb/"> <i class="fa-brands fa-linkedin"></i></a><a href="https://www.snapchat.com/add/rohit_waghe45?share_id=s7P0gxnatmk&locale=en-US"><i class="fa-brands fa-snapchat"></i></a>
+
+    </div>
+    
+    <div id="search-container" style="margin-top: 5%;">
+        <div id="search-input-container">
+          <img src="https://assets.codepen.io/1468070/Google+G+Icon.png" alt="" />
+          <input type="text" placeholder="Search anything" id="search" />
+        </div>
+
+        <button id="image-button" onclick="googleSearch();" type="button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button id="mic-button" type="button">
+            <i class="fa-solid fa-microphone"></i>
+      
+        </button>
+
+   
+    
+        </div>
+
+        
+    <div class="logo">
+        <a href="https://www.instagram.com/rohit_waghe_45/"><i class="fa-brands fa-instagram"></i>Inastagram</a>
+        <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i> Whatsaap</a>
+        <a href="https://github.com/"><i class="fa-brands fa-github"></i>GitHUB</a>
+    </div>
+    <div class="logo">
+        <a href="https://codepen.io/pen/"><i class="fa-brands fa-codepen"></i>Codepen</a>
+        <a href="https://open.spotify.com/"><i class="fa-brands fa-spotify"></i>Spotify</a>
+        <a href="https://www.netflix.com/in/"><i class="fa-solid fa-n"></i>Netflix</a>
+
+    </div>
+    
+    <div class="logo">
+        <a href="https://chatgpt.com/"><i class="fa-solid fa-robot"></i>ChatGpt</a>
+        <a href="https://www.hotstar.com/in"><i class="fa-solid fa-ghost"></i>Hotstar</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function googleSearch()
+        {
+            var text=document.getElementById("search").value;
+            var cleanQuery = text.replace(" ","+",text);
+            var url='http://www.google.com/search?q='+cleanQuery;
+        
+            window.location.href=url;
+        }
+        </script>
+</body>
+</html>
